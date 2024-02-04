@@ -227,7 +227,7 @@ summary {
     transform: translateY(-8px);
 }
 
-/*-- PROJECTS --*/
+/*---------- PROJECTS ----------*/
 
 #projects {
     padding: 50px 0;
@@ -312,7 +312,7 @@ summary {
     color: #000;
 }
 
-/*-- CONTACT --*/
+/*---------- CONTACT ----------*/
 
 .contact-left {
     flex-basis: 35%;
@@ -385,7 +385,12 @@ form .btn2 {
     cursor: pointer;
 }
 
-/* ---- FOOTER ---- */
+input:active, input:focus, textarea:active, textarea:focus {
+  border: 1px solid #fff;
+  outline: none;
+}
+
+/* ---------- FOOTER ---------- */
 
 footer {
     width: 100%;

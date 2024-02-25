@@ -231,6 +231,7 @@ summary {
 
 #projects {
     padding: 50px 0;
+    display: none;
 }
 
 .work-list {

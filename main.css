@@ -398,7 +398,6 @@ footer {
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    font-weight: 400;
     background-color: #2e364d;
     margin-top: 20px;
 }
@@ -412,11 +411,6 @@ footer {
 .footer p {
     margin-top: 15px;
     margin-bottom: 15px;
-}
-
-.references {
-    margin-top: 20px;
-    opacity: 25%;
 }
 
 /*----------- RESPONSIVE ------------*/

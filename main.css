@@ -415,37 +415,15 @@ footer {
 
 /*----------- RESPONSIVE ------------*/
 
-/*nav .fa-solid {
-    display: none;
+@media only screen and (min-width: 754px) and (max-width: 901px){
+   
+   nav {
+    background-color: var(--background-color);
+    font-size: 2rem;
+   }
+   
+   .logo {
+    width: 150px;
+    border-radius: 50%;
+    }
 }
-
-@media only screen and (max-width: 600px){
-    #header {
-        margin-top: 100%;
-        font-size: 16px;
-    }
-
-    .header-intro {
-        font-size: 16px;
-    }
-
-    nav .fa-solid {
-        display: block;
-        font-size: 25px;
-    }
-
-    nav ul {
-        background: var(--bookend-color);
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 25px;
-    }
-}*/

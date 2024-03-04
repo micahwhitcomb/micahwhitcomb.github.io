@@ -55,8 +55,8 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    font-size: 1.33rem;
     position: relative;
+    font-size: 1.5rem;
 }
 
 nav ul li a::after {
@@ -86,7 +86,7 @@ span {
 /* ---------- ABOUT ---------- */
 
 #about {
-    padding: 80px;
+    padding: 75px;
     color: #ababab;
     background-attachment: fixed;
     background-size: cover;
@@ -117,27 +117,24 @@ span {
     color: #fff;
 }
 
-.tab-titles {
+.tab-container {
     display: flex;
     margin: 20px 0 40px;
 }
 
 .tab-links {
     margin-right: 50px;
-    font-size: 18px;
+    font-size: 1rem;
     cursor: pointer;
     position: relative;
+    background-color: var(--background-color);
+    border: none;
 }
 
-.tab-links::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background: var(--accent-color);
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.3s;
+.tab-links:hover {
+    color:var(--accent-color);
+    transition: color 0.3s ease-in;
+    text-decoration: underline;
 }
 
 .tab-links.active-link::after {
@@ -151,7 +148,6 @@ span {
 
 .tab-contents ul li span {
     color: var(--accent-color);
-    font-size: 16px;
 }
 
 .tab-contents {
@@ -295,7 +291,7 @@ summary {
 .btn {
     display: block; margin: 50px auto;
     width: fit-content;
-    border: 3px solid #f58327;
+    border: 3px solid var(--accent-color);
     padding: 14px 50px;
     border-radius: 5px;
     text-decoration: none;
@@ -306,7 +302,6 @@ summary {
     background: var(--accent-color);
     color: #000;
 }
-
 
 /*-- CONTACT --*/
 
@@ -415,7 +410,7 @@ footer {
 
 /*----------- RESPONSIVE ------------*/
 
-@media only screen and (max-width: 932px){
+@media only screen and (max-width: 979px){
    
    nav {
     background-color: var(--background-color);

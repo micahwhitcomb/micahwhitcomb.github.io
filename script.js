@@ -1,15 +1,31 @@
 /* JavaScript file for Portfolio*/
 
-const tablinks = document.getElementsByClassName("tab-links");
-        const tabcontents = document.getElementsByClassName("tab-contents");
+const tabLinks = document.querySelectorAll(".tab-links");
+const tabContents = document.querySelectorAll(".tab-contents");
 
-        function opentab(tabname){
-          for (tablink of tablinks){
-            tablink.classList.remove("active-link");
-          }
-          for (tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-          }
-          event.currentTarget.classList.add("active-link");
-          document.getElementById(tabname).classList.add("active-tab");
-        }
+function openTab(tabName) {
+  if (!tabName) return;
+
+  tabLinks.forEach(tablink => tablink.classList.remove("active-link"));
+  tabContents.forEach(tabcontent => tabcontent.classList.remove("active-tab"));
+
+  const clickedTab = document.querySelector(`[data-tab-name="${tabName}"]`);
+  if (clickedTab) {
+    clickedTab.classList.add("active-tab");
+  }
+
+  const tabContent = document.getElementById(tabName);
+  if (tabContent) {
+    tabContent.classList.add("active-tab");
+  } else {
+    console.error(`Tab content "${tabName}" not found.`);
+  }
+}
+
+const tabContainer = document.querySelector(".tab-container");
+tabContainer.addEventListener("click", function(event) {
+  if (event.target.matches(".tab-links")) {
+    const tabName = event.target.dataset.tabName;
+    openTab(tabName);
+  }
+});

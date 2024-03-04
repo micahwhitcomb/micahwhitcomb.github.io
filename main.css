@@ -1,10 +1,10 @@
 /*CSS Main Stylesheet*/
 * {
-    border-sizing: border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Nunito Sans", sans-serif;
     /*font-family: 'Montserrat', sans-serif;*/
+    font-family: "Nunito Sans", sans-serif;
     font-weight: 400;
     color: #fff;
 }
@@ -55,7 +55,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    font-size: 22px;
+    font-size: 1.33rem;
     position: relative;
 }
 
@@ -91,10 +91,6 @@ span {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-}
-
-.about-icon {
-    max-width: 400px;
 }
 
 .row {
@@ -224,7 +220,8 @@ summary {
     transform: translateY(-8px);
 }
 
-/*---------- PROJECTS ----------*/
+/*-- PROJECTS --*/
+
 
 #projects {
     padding: 50px 0;
@@ -310,7 +307,8 @@ summary {
     color: #000;
 }
 
-/*---------- CONTACT ----------*/
+
+/*-- CONTACT --*/
 
 .contact-left {
     flex-basis: 35%;
@@ -388,12 +386,13 @@ input:active, input:focus, textarea:active, textarea:focus {
   outline: none;
 }
 
-/* ---------- FOOTER ---------- */
+/* ---- FOOTER ---- */
 
 footer {
     width: 100%;
     text-align: center;
     padding: 25px 0;
+    font-weight: 400;
     background-color: #2e364d;
     margin-top: 20px;
 }
@@ -409,9 +408,14 @@ footer {
     margin-bottom: 15px;
 }
 
+.references {
+    margin-top: 20px;
+    opacity: 25%;
+}
+
 /*----------- RESPONSIVE ------------*/
 
-@media only screen and (min-width: 754px) and (max-width: 901px){
+@media only screen and (max-width: 932px){
    
    nav {
     background-color: var(--background-color);
@@ -421,5 +425,13 @@ footer {
    .logo {
     width: 150px;
     border-radius: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }

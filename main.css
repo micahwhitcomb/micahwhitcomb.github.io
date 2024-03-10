@@ -290,9 +290,9 @@ summary {
 
 .btn {
     display: block; margin: 50px auto;
-    width: fit-content;
+    /*width: fit-content;*/
     border: 3px solid var(--accent-color);
-    padding: 14px 50px;
+    padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     transition: background 0.3s;

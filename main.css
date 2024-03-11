@@ -117,7 +117,7 @@ span {
     color: #fff;
 }
 
-.tab-container {
+.tab-titles {
     display: flex;
     margin: 20px 0 40px;
 }
@@ -164,7 +164,7 @@ summary {
     padding-top: 16px;
 }
 
-/* ---------- SERVICES ---------- */
+/* ---------- SKILL SET ---------- */
 
 #skills {
     padding: 30px 0;
@@ -183,37 +183,29 @@ summary {
 
 .services-list div {
     background: #262626;
-    transition: background 0.5s, transform 0.5s;
+    transition: background 0.5s, transform 0.4s;
     padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
     border-right: 10px;
     border-radius: 30px;
 }
 
 .services-list div i {
-    font-size: 40px;
-    margin-bottom: 30px;
-    color: var(--icon-color);
+    font-size: 2.5rem;
+    margin-bottom: 5%;
 }
 
 .services-list div h2 {
     font-size: 30px;
-    font-weight: 500;
     margin-bottom: 15px;
 }
 
-.services-list div a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
+.services-list p {
+    font-size: 0.90rem;
 }
 
 .services-list div:hover {
-    background: #31373d;
-    transform: translateY(-8px);
+    background: #111;
+    transform: translateY(-6px);
 }
 
 /*-- PROJECTS --*/

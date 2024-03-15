@@ -7,7 +7,6 @@
         <title>Micah Whitcomb</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
         <link rel="icon" type="image/png" sizes="32x32" href="images/mwicon.png">
         <link href="main.css" rel="stylesheet">
@@ -46,9 +45,9 @@
               <h1 class="sub-title">About Me</h1>
               <p>I currently work in commercial real estate and starting April of 2022 I began to teach myself front end development, starting with HTML, CSS, and JavaScript. I found that coding and solving problems with computers is a newfound passion of mine and I would love an opportunity to learn new skills and pivot my career to the tech industry.</p>
               <div class="tab-titles">
-                <p class="tab-links active-link" onclick="opentab('knowledge')">Knowledge</p>
-                <p class="tab-links" onclick="opentab('experience')">Work Experience</p>
-                <p class="tab-links" onclick="opentab('education')">Education</p>
+                <button class="tab-links active-link" onclick="openTab('knowledge')">Knowledge</button>
+                <button class="tab-links" onclick="openTab('experience')">Work Experience</button>
+                <button class="tab-links" onclick="openTab('education')">Education</button>
               </div>
               <div class="tab-contents active-tab" id="knowledge">
                 <ul>
@@ -80,7 +79,7 @@
       </div>
       <hr>
 
-      <!--SERVICES-->
+      <!--SKILL SET-->
 
       <div id="skills">
         <div class="container">
@@ -166,8 +165,8 @@
             </div>
             <div class="contact-right">
               <form>
-                <input type="text" name="Name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="Name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
                 <textarea name="message" rows="6" placeholder="Type here..."></textarea>
                 <button type="submit" class="btn btn2">SEND</button>
               </form>

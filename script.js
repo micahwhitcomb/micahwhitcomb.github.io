@@ -17,8 +17,6 @@ function openTab(tabName) {
   const tabContent = document.getElementById(tabName);
   if (tabContent) {
     tabContent.classList.add("active-tab");
-  } else {
-    console.error(`Tab content "${tabName}" not found.`);
   }
 }
 
